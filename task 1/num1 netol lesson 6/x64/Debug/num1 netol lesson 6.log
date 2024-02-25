@@ -1,2 +1,5 @@
 ﻿  num1 netol lesson 6.cpp
+C:\Users\User\source\repos\num1 netol lesson 6\num1 netol lesson 6.cpp(30,16): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\User\source\repos\num1 netol lesson 6\num1 netol lesson 6.cpp(32,18): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\User\source\repos\num1 netol lesson 6\num1 netol lesson 6.cpp(34,19): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
   num1 netol lesson 6.vcxproj -> C:\Users\User\source\repos\num1 netol lesson 6\x64\Debug\num1 netol lesson 6.exe

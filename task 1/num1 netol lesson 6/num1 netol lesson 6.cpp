@@ -4,14 +4,15 @@
 
 #ifndef MODE 
 #define MODE 1
+#else
+std::cout << "опредедите MODE" << endl;
 #endif
-
 int add(int a, int b) {
     return a + b;
 }
 
 int countnum(int a, int b) {
-    std::cout << "работаю в режиме тренировки " << std::endl;
+    std::cout << "работаю в боевом режиме " << std::endl;
     std::cout << "Введите 1 число: ";
     std::cin >> a;
     std::cout << "\nВведите 2 число: ";
@@ -26,17 +27,14 @@ int main() {
 
     int a = 0;
     int b = 0;
-
-    if (MODE > 1) {
+#if (MODE > 1) {
         std::cout << "неизвестный режим\n";
-    }
-    else if (MODE < 1) {
+#elif (MODE < 1) {
         std::cout << "неизвестный режим\n";
-    }
-    else if (MODE == 1) {
+#elif (MODE == 1) {
         int result = countnum(a, b);
         std::cout << "\nРезультат сложения: " << result;
-    }
+#endif
 
     return 0;
 }
