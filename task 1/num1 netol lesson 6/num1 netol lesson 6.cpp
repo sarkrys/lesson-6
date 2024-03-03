@@ -5,7 +5,7 @@
 #ifndef MODE 
 #define MODE 1
 #else
-std::cout << "опредедите MODE" << endl;
+#error
 #endif
 int add(int a, int b) {
     return a + b;
@@ -27,11 +27,11 @@ int main() {
 
     int a = 0;
     int b = 0;
-#if (MODE > 1) {
-        std::cout << "неизвестный режим\n";
-#elif (MODE < 1) {
-        std::cout << "неизвестный режим\n";
-#elif (MODE == 1) {
+#if (MODE > 1)
+        std::cout << "работаю в режиме тренировку\n";
+#elif (MODE < 1)
+        std::cout << "работаю в режиме тренировку\n";
+#elif (MODE == 1)
         int result = countnum(a, b);
         std::cout << "\nРезультат сложения: " << result;
 #endif
